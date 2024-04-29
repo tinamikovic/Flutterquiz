@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ResultsScreen extends StatelessWidget {
+  const ResultsScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -9,19 +11,17 @@ class ResultsScreen extends StatelessWidget {
         margin: const EdgeInsets.all(40),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text("You answerd X out of Y questions correctly!"),
-            SizedBox(
-              height: 30,
-            ),
-            Text("List of answers and questions..."),
-            SizedBox(
+          children: [
+            const Text("You answerd X out of Y questions correctly!"),
+            const SizedBox(height: 30),
+            const Text("List of answers and questions..."),
+            const SizedBox(
               height: 30,
             ),
             TextButton(
               onPressed: () {},
-              child: Text("Restart Quiz!"),
-            )
+              child: const Text("Restart Quiz!"),
+            ),
           ],
         ),
       ),
